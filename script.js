@@ -511,3 +511,195 @@ function page2Part3Animation() {
   });
 }
 page2Part3Animation();
+
+function page2Part4Animation() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part4",
+      start: "top 40%",
+      end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+  tl.to(
+    ".main",
+    {
+      backgroundColor: "#A031FF",
+    },
+    "same"
+  );
+
+  tl.from(
+    ".page2-part4-right>h3",
+    {
+      opacity: 0,
+    },
+    "same"
+  );
+  tl.from(
+    ".page2-part4-circle",
+    {
+      y: 600,
+    },
+    "same"
+  );
+
+  tl.from(".page2-part4 > h1", {
+    left: "100%",
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part4",
+      start: "top 40%",
+      end: "top -40%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
+page2Part4Animation();
+
+function page2Part5Animation() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part5",
+      start: "top 40%",
+      end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+  tl.to(
+    ".main",
+    {
+      backgroundColor: "#3B7977",
+    },
+    "same"
+  );
+
+  tl.from(
+    ".page2-part5-right>h3",
+    {
+      opacity: 0,
+    },
+    "same"
+  );
+  tl.from(
+    ".page2-part5-circle",
+    {
+      y: 600,
+    },
+    "same"
+  );
+
+  tl.from(".page2-part5 > h1", {
+    left: "100%",
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part5",
+      start: "top 40%",
+      end: "top -40%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
+page2Part5Animation();
+
+function page2Part6Animation() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part6",
+      start: "top 40%",
+      end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+  tl.to(
+    ".main",
+    {
+      backgroundColor: "#1477FB",
+    },
+    "same"
+  );
+
+  tl.from(
+    ".page2-part6-right>h3",
+    {
+      opacity: 0,
+    },
+    "same"
+  );
+  tl.from(
+    ".page2-part6-circle",
+    {
+      y: 600,
+    },
+    "same"
+  );
+
+  tl.from(".page2-part6 > h1", {
+    left: "100%",
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part6",
+      start: "top 40%",
+      end: "top -40%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
+page2Part6Animation();
+
+function page2Part7Animation() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part7",
+      start: "top 40%",
+      end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+  tl.to(
+    ".main",
+    {
+      backgroundColor: "#AE928D",
+    },
+    "same"
+  );
+
+  tl.from(
+    ".page2-part7-right>h3",
+    {
+      opacity: 0,
+    },
+    "same"
+  );
+  tl.from(
+    ".page2-part7-circle",
+    {
+      y: 600,
+    },
+    "same"
+  );
+
+  tl.from(".page2-part7 > h1", {
+    left: "100%",
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page2-part7",
+      start: "top 40%",
+      end: "top -40%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
+page2Part7Animation();
