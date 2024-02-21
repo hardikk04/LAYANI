@@ -1094,7 +1094,7 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part10",
     {
-      top: "-130%",
+      top: "-70%",
     },
     "p5-p10"
   );
@@ -1141,3 +1141,109 @@ page5AllSvg.forEach((svg, index) => {
     }
   });
 });
+
+clutterAnimation(".page6-title-box > h1");
+clutterAnimation(".page6>p");
+
+function page6Animation() {
+  gsap.from(".page6-title-box > h1>span", {
+    y: -200,
+    opacity: 0,
+    // rotate: 180,
+    scale: 0.5,
+    stagger: {
+      amount: 2,
+    },
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page6-title-box",
+      start: "top 50%",
+      end: "top 30%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  gsap.from(".page6>p>span", {
+    opacity: 0.1,
+    stagger: {
+      amount: 2,
+    },
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page6-title-box",
+      start: "top 30%",
+      end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
+page6Animation();
+
+function page7Animation() {
+  const page7Tl = gsap.timeline({
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page7",
+      start: "top 0%",
+      end: "top -100%",
+      scrub: 1,
+      markers: true,
+      pin: true,
+    },
+  });
+
+  page7Tl.from(".page7-title-box", {
+    scale: 300,
+    x: -2000,
+  });
+
+  page7Tl.from(".page7-box", {
+    opacity: 0,
+  });
+
+  if (
+    !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    Shery.imageEffect(".page7-right", {
+      style: 5,
+      // gooey: true,
+      // debug: true,
+      config: {
+        a: { value: 2, range: [0, 30] },
+        b: { value: -0.73, range: [-1, 1] },
+        zindex: { value: "9", range: [-9999999, 9999999] },
+        aspect: { value: 0.9100550410070063 },
+        ignoreShapeAspect: { value: true },
+        shapePosition: { value: { x: 0, y: 0 } },
+        shapeScale: { value: { x: 0.5, y: 0.5 } },
+        shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+        shapeRadius: { value: 0, range: [0, 2] },
+        currentScroll: { value: 0 },
+        scrollLerp: { value: 0.07 },
+        gooey: { value: true },
+        infiniteGooey: { value: true },
+        growSize: { value: 4, range: [1, 15] },
+        durationOut: { value: 1, range: [0.1, 5] },
+        durationIn: { value: 1.5, range: [0.1, 5] },
+        displaceAmount: { value: 0.5 },
+        masker: { value: true },
+        maskVal: { value: 1, range: [1, 5] },
+        scrollType: { value: 0 },
+        geoVertex: { range: [1, 64], value: 1 },
+        noEffectGooey: { value: true },
+        onMouse: { value: 1 },
+        noise_speed: { value: 0.2, range: [0, 10] },
+        metaball: { value: 0.32, range: [0, 2] },
+        discard_threshold: { value: 0.5, range: [0, 1] },
+        antialias_threshold: { value: 0, range: [0, 0.1] },
+        noise_height: { value: 0.5, range: [0, 2] },
+        noise_scale: { value: 10, range: [0, 100] },
+      },
+    });
+  }
+}
+page7Animation();

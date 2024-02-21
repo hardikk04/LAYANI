@@ -757,6 +757,8 @@ html {
   display: flex;
   justify-content: space-between;
   position: relative;
+  transform-origin: top center;
+  overflow: hidden;
 }
 
 .page5-left {
@@ -1112,4 +1114,131 @@ html {
   font-weight: 200;
   margin-top: 2vw;
   width: 90%;
+}
+
+.page6 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: var(--secondary-color);
+  padding: 0 4vw;
+}
+
+.page6-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: saol;
+}
+
+.page6-title-box {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.page6-title-box > h1 {
+  font-size: 14vw;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.page6-title-box > h1 > span {
+  display: inline-block;
+}
+
+.page6 > p {
+  font-family: apercuLight;
+  font-size: 2.5vw;
+  margin-top: 2vw;
+}
+
+.page6-brands {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  margin-top: 5vw;
+}
+
+.brand-elem > svg {
+  height: 2vw;
+  width: 8vw;
+}
+
+.page7 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+}
+
+.page7-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: saol;
+}
+
+.page7-title-box {
+  /* overflow: hidden; */
+  text-align: center;
+  width: 100%;
+}
+
+.page7-title-box > h1 {
+  font-weight: 500;
+  font-size: 14vw;
+  line-height: 1;
+}
+
+.page7-title-box > h1 > span {
+  display: inline-block;
+}
+
+.page7-box {
+  position: relative;
+  width: 100%;
+  padding: 0 4vw;
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  margin-top: 2vw;
+}
+
+.page7-left {
+  position: relative;
+  height: 100%;
+  width: 65%;
+  padding-right: 3.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page7-left > p {
+  font-size: 2.2vw;
+  font-family: apercuRegular;
+}
+
+.page7-left > p:nth-child(2) {
+  margin-top: 3vw;
+}
+
+.page7-right {
+  position: relative;
+  height: 100%;
+  width: 30%;
+}
+
+.page7-right > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
