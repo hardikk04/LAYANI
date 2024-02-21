@@ -25,20 +25,6 @@ const lenisJs = () => {
 };
 lenisJs();
 
-const clutterAnimationForWords = (element) => {
-  const htmlTag = document.querySelector(element);
-  let clutter = "";
-
-  // Splitting the text content into individual letters and wrapping each in a span with a class
-  htmlTag.textContent.split(" ").forEach((word, index) => {
-    clutter += `<div><span class='text${index}'>${word + " "}</span></div>`;
-  });
-
-  // Updating the HTML content of the element with the animated spans
-  htmlTag.innerHTML = clutter;
-};
-clutterAnimationForWords(".page1-hero-text>h3");
-
 function loaderAnimation() {
   const loaderTl = gsap.timeline();
   loaderTl.to(".loader-overlay", {
@@ -48,37 +34,176 @@ function loaderAnimation() {
     delay: 0.5,
   });
 
+  loaderTl.to(".loader-box", {
+    delay: 1,
+    x: -775,
+    y: -360,
+    duration: 1,
+  });
+
   loaderTl.to(
     ".loader",
     {
       opacity: 0,
+
       ease: "power4.inOut",
       duration: 1,
-      delay: 0.5,
+      delay: -0.5,
     },
     "same"
   );
 
   loaderTl.from("nav", {
-    y: -30,
+    // y: -30,
+    delay: -1,
     opacity: 0,
   });
 
-  loaderTl.from(".page1-hero-text>h3>div>span", {
-    y: 100,
+  loaderTl.from(".page1-text-all", {
+    opacity: 0,
+    y: -200,
+    x: 200,
     stagger: {
-      amount: 2,
-      from: "random",
+      amount: 4,
     },
   });
 
-  loaderTl.from(".page1-footer-box>span", {
+  // loaderTl.from(".page1-footer-box>span", {
+  //   scale: 0,
+  //   stagger: {
+  //     amount: 1.5,
+  //     from: "random",
+  //   },
+  // });
+
+  loaderTl.from(".philippe-svg", {
     opacity: 0,
-    stagger: {
-      amount: 1,
-      from: "random",
-    },
+    drawSVG: 0,
   });
+
+  loaderTl.to(
+    ".berlin-text",
+    {
+      scale: 0,
+      // y: -100,
+    },
+    "berlin"
+  );
+
+  loaderTl.to(
+    ".berlin-svg",
+    {
+      opacity: 1,
+      scale: 1,
+    },
+    "berlin"
+  );
+
+  loaderTl.to(
+    ".vienna-text",
+    {
+      scale: 0,
+      y: 100,
+    },
+    "vienna"
+  );
+
+  loaderTl.to(
+    ".vienna-svg",
+    {
+      transform: "translate(-50%, -60%)",
+      opacity: 1,
+    },
+    "vienna"
+  );
+
+  loaderTl.to(
+    ".ux-text",
+    {
+      scale: 0,
+    },
+    "ux"
+  );
+
+  loaderTl.to(
+    ".ux-svg",
+    {
+      opacity: 1,
+      scale: 1,
+    },
+    "ux"
+  );
+
+  loaderTl.to(
+    ".creativity-text",
+    {
+      scale: 0,
+    },
+    "creativity"
+  );
+
+  loaderTl.to(
+    ".creativity-svg",
+    {
+      opacity: 1,
+      scale: 1,
+      strokeDashoffset: 3200,
+      strokeDasharray: 3200,
+    },
+    "creativity"
+  );
+
+  loaderTl.to(
+    ".tailor-text",
+    {
+      scale: 0,
+      y: 100,
+    },
+    "tailor"
+  );
+
+  loaderTl.to(
+    ".tailor-svg",
+    {
+      transform: "translate(0%, 0%)",
+      opacity: 1,
+    },
+    "tailor"
+  );
+
+  loaderTl.to(
+    ".experiences-text",
+    {
+      scale: 0,
+    },
+    "experiences"
+  );
+
+  loaderTl.to(
+    ".experiences-svg",
+    {
+      opacity: 1,
+      scale: 1,
+    },
+    "experiences"
+  );
+
+  loaderTl.to(
+    ".brand-text",
+    {
+      scale: 0,
+    },
+    "brand"
+  );
+
+  loaderTl.to(
+    ".brand-svg",
+    {
+      opacity: 1,
+      scale: 1,
+    },
+    "brand"
+  );
 }
 loaderAnimation();
 
@@ -257,6 +382,7 @@ function textFlyoutAnimation() {
       y: 100,
       scale: 5,
       rotate: -320,
+      opacity: 0.3,
     },
     "same"
   )
@@ -267,6 +393,7 @@ function textFlyoutAnimation() {
         y: -700,
         scale: 4,
         rotate: 220,
+        opacity: 0.3,
       },
       "same"
     )
@@ -277,6 +404,7 @@ function textFlyoutAnimation() {
         x: -800,
         rotate: 260,
         scale: 4,
+        opacity: 0.3,
       },
       "same"
     )
@@ -288,6 +416,7 @@ function textFlyoutAnimation() {
         x: 200,
         rotate: 260,
         scale: 6,
+        opacity: 0.3,
       },
       "same"
     )
@@ -298,6 +427,7 @@ function textFlyoutAnimation() {
         x: 800,
         rotate: 260,
         scale: 4,
+        opacity: 0.3,
       },
       "same"
     )
@@ -305,10 +435,11 @@ function textFlyoutAnimation() {
     .from(
       ".p2",
       {
-        y: -200,
+        y: -100,
         x: 400,
         rotate: 300,
         scale: 2,
+        opacity: 0.3,
       },
       "same"
     )
@@ -319,6 +450,7 @@ function textFlyoutAnimation() {
         x: -200,
         rotate: 300,
         scale: 5,
+        opacity: 0.3,
       },
       "same"
     )
@@ -329,6 +461,7 @@ function textFlyoutAnimation() {
         y: 200,
         scale: 5,
         rotate: 180,
+        opacity: 0.3,
       },
       "same"
     );
@@ -372,7 +505,7 @@ function page2Animation() {
       scroller: "body",
       trigger: ".page2",
       start: "top 0%",
-      end: "top -1000%",
+      end: "top -1200%",
       pin: true,
       scrub: 1,
       // markers: true,
