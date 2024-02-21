@@ -76,9 +76,14 @@ function loaderAnimation() {
   //   },
   // });
 
-  loaderTl.from(".philippe-svg", {
-    opacity: 0,
-    drawSVG: 0,
+  // loaderTl.from(".philippe-svg", {
+  //   // opacity: 0,
+  //   duration: 1,
+  // });
+
+  loaderTl.to(".philippe-path", {
+    strokeDashoffset: 0,
+    duration: 4,
   });
 
   loaderTl.to(
@@ -86,6 +91,7 @@ function loaderAnimation() {
     {
       scale: 0,
       // y: -100,
+      delay: -2.5,
     },
     "berlin"
   );
@@ -95,6 +101,7 @@ function loaderAnimation() {
     {
       opacity: 1,
       scale: 1,
+      delay: -2.5,
     },
     "berlin"
   );
@@ -104,6 +111,7 @@ function loaderAnimation() {
     {
       scale: 0,
       y: 100,
+      delay: -1.5,
     },
     "vienna"
   );
@@ -113,6 +121,7 @@ function loaderAnimation() {
     {
       transform: "translate(-50%, -60%)",
       opacity: 1,
+      delay: -1.5,
     },
     "vienna"
   );
@@ -121,6 +130,7 @@ function loaderAnimation() {
     ".ux-text",
     {
       scale: 0,
+      delay: -0.5,
     },
     "ux"
   );
@@ -130,6 +140,7 @@ function loaderAnimation() {
     {
       opacity: 1,
       scale: 1,
+      delay: -0.5,
     },
     "ux"
   );
@@ -147,8 +158,6 @@ function loaderAnimation() {
     {
       opacity: 1,
       scale: 1,
-      strokeDashoffset: 3200,
-      strokeDasharray: 3200,
     },
     "creativity"
   );
@@ -368,8 +377,8 @@ function textFlyoutAnimation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page1-footer",
-      start: "top 50%",
-      end: "top 20%",
+      start: "top 60%",
+      end: "top 0%",
       scrub: 1,
       // markers: true,
     },
@@ -485,7 +494,7 @@ function page2Animation() {
   gsap.from(".page2-title > h1>span", {
     y: 200,
     opacity: 0,
-    rotate: 180,
+    // rotate: 180,
     stagger: {
       amount: 2,
       from: "random",
@@ -869,10 +878,11 @@ clutterAnimation(".page3-title-box > h1");
 gsap.from(".page3-title-box > h1>span", {
   y: 200,
   opacity: 0,
-  rotate: 180,
+  scale: 3,
+  // rotate: 180,
   stagger: {
     amount: 2,
-    from: "random",
+    from: "center",
   },
   scrollTrigger: {
     scroller: "body",
@@ -907,6 +917,22 @@ function page3MouseFollowerAnimation() {
   });
 }
 
+gsap.from(".page3-elem", {
+  opacity: 0.3,
+  stagger: {
+    amount: 3,
+  },
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3",
+    start: "top 30%",
+    end: "top -10%",
+    scrub: 1,
+    // pin: true,
+    // markers: true,
+  },
+});
+
 page3MouseFollowerAnimation();
 
 const mousefollowerImgArray = ["./Imgs/coco-cola.png", ""];
@@ -928,5 +954,190 @@ page3AllElem.forEach((elem, index) => {
         });
       },
     });
+  });
+});
+
+clutterAnimation(".page4-title-box > h1");
+gsap.from(".page4-title-box > h1>span", {
+  y: 200,
+  opacity: 0,
+  // rotate: 180,
+  scale: 0.5,
+  stagger: {
+    amount: 2,
+  },
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page4-title-box",
+    start: "top 75%",
+    end: "top 40%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+clutterAnimation(".page5-title-box > h1");
+function page5Animation() {
+  gsap.to(".main", {
+    backgroundColor: "#404040",
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page5",
+      start: "top 30%",
+      end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  gsap.from(".page5-title-box > h1>span", {
+    x: 200,
+    opacity: 0,
+    // rotate: 180,
+    scale: 0.5,
+    stagger: {
+      amount: 2,
+    },
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page5-title-box",
+      start: "top 20%",
+      end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  const page5AnimationTl = gsap.timeline({
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page5-box",
+      start: "top 0",
+      end: "top -1200%",
+      scrub: 1,
+      pin: true,
+    },
+  });
+
+  page5AnimationTl.to(
+    ".page5-left-part1",
+    {
+      top: "-15%",
+    },
+    "p5-p1"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part2",
+    {
+      top: "-30%",
+    },
+    "p5-p2"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part3",
+    {
+      top: "-45%",
+    },
+    "p5-p3"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part4",
+    {
+      top: "-60%",
+    },
+    "p5-p4"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part5",
+    {
+      top: "-60%",
+    },
+    "p5-p5"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part6",
+    {
+      top: "-80%",
+    },
+    "p5-p6"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part7",
+    {
+      top: "-90%",
+    },
+    "p5-p7"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part8",
+    {
+      top: "-110%",
+    },
+    "p5-p8"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part9",
+    {
+      top: "-120%",
+    },
+    "p5-p9"
+  );
+
+  page5AnimationTl.to(
+    ".page5-left-part10",
+    {
+      top: "-130%",
+    },
+    "p5-p10"
+  );
+}
+
+page5Animation();
+
+const page5AllSvg = document.querySelectorAll(".page5-all-svg");
+const page5AllTitles = document.querySelectorAll(".page5-all-titles");
+
+let flag = 0;
+page5AllSvg.forEach((svg, index) => {
+  svg.addEventListener("click", () => {
+    if (flag === 0) {
+      gsap.to(svg, {
+        rotate: "45deg",
+      });
+      for (let i = 0; i < page5AllTitles.length; i++) {
+        if (i === index) {
+          gsap.to(page5AllTitles[i], {
+            height: "35vw",
+          });
+        } else {
+          gsap.to(page5AllTitles[i], {
+            height: "6vw",
+          });
+        }
+      }
+      flag = 1;
+    } else {
+      gsap.to(svg, {
+        rotate: "0deg",
+      });
+      if (index === 5) {
+        gsap.to(page5AllTitles[index], {
+          height: "10vw",
+        });
+      } else {
+        gsap.to(page5AllTitles[index], {
+          height: "6vw",
+        });
+      }
+      flag = 0;
+    }
   });
 });
