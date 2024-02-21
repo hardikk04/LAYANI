@@ -1128,15 +1128,14 @@ page5AllSvg.forEach((svg, index) => {
       gsap.to(svg, {
         rotate: "0deg",
       });
-      if (index === 5) {
-        gsap.to(page5AllTitles[index], {
-          height: "10vw",
-        });
-      } else {
-        gsap.to(page5AllTitles[index], {
-          height: "6vw",
-        });
-      }
+
+      gsap.to(page5AllTitles[index], {
+        height: "6vw",
+      });
+
+      gsap.to(page5AllTitles[5], {
+        height: "10vw",
+      });
       flag = 0;
     }
   });
@@ -1187,9 +1186,9 @@ function page7Animation() {
       scroller: "body",
       trigger: ".page7",
       start: "top 0%",
-      end: "top -100%",
+      end: "top -300%",
       scrub: 1,
-      markers: true,
+      // markers: true,
       pin: true,
     },
   });
@@ -1199,9 +1198,21 @@ function page7Animation() {
     x: -2000,
   });
 
-  page7Tl.from(".page7-box", {
-    opacity: 0,
-  });
+  page7Tl.from(
+    ".page7-left",
+    {
+      opacity: 0,
+    },
+    "same"
+  );
+
+  page7Tl.from(
+    ".page7-right",
+    {
+      y: 600,
+    },
+    "same"
+  );
 
   if (
     !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -1210,11 +1221,11 @@ function page7Animation() {
   ) {
     Shery.imageEffect(".page7-right", {
       style: 5,
-      // gooey: true,
+      gooey: true,
       // debug: true,
       config: {
         a: { value: 2, range: [0, 30] },
-        b: { value: -0.73, range: [-1, 1] },
+        b: { value: -0.94, range: [-1, 1] },
         zindex: { value: "9", range: [-9999999, 9999999] },
         aspect: { value: 0.9100550410070063 },
         ignoreShapeAspect: { value: true },
@@ -1230,14 +1241,14 @@ function page7Animation() {
         durationOut: { value: 1, range: [0.1, 5] },
         durationIn: { value: 1.5, range: [0.1, 5] },
         displaceAmount: { value: 0.5 },
-        masker: { value: true },
+        masker: { value: false },
         maskVal: { value: 1, range: [1, 5] },
         scrollType: { value: 0 },
         geoVertex: { range: [1, 64], value: 1 },
         noEffectGooey: { value: true },
         onMouse: { value: 1 },
         noise_speed: { value: 0.2, range: [0, 10] },
-        metaball: { value: 0.32, range: [0, 2] },
+        metaball: { value: 0.32, range: [0, 2], _gsap: { id: 508 } },
         discard_threshold: { value: 0.5, range: [0, 1] },
         antialias_threshold: { value: 0, range: [0, 0.1] },
         noise_height: { value: 0.5, range: [0, 2] },
