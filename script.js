@@ -36,8 +36,8 @@ function loaderAnimation() {
 
   loaderTl.to(".loader-box", {
     delay: 1,
-    x: -775,
-    y: -360,
+    left: "6%",
+    top: "10%",
     duration: 1,
   });
 
@@ -63,9 +63,7 @@ function loaderAnimation() {
     opacity: 0,
     y: -200,
     x: 200,
-    stagger: {
-      amount: 4,
-    },
+    stagger: 0.1,
   });
 
   // loaderTl.from(".page1-footer-box>span", {
@@ -1209,7 +1207,7 @@ function page7Animation() {
   page7Tl.from(
     ".page7-right",
     {
-      y: 600,
+      y: 800,
     },
     "same"
   );
