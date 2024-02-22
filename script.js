@@ -1299,7 +1299,7 @@ function page7Animation() {
 
   page7Tl.from(".page7-title-box", {
     scale: 300,
-    x: -2000,
+    transform: "translateX(-130%)",
   });
 
   page7Tl.from(
@@ -1362,3 +1362,289 @@ function page7Animation() {
   }
 }
 page7Animation();
+
+function page8Animation() {
+  gsap.from(".page8-elem > h1,.page8 a", {
+    y: 100,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page8-elem",
+      start: "top 70%",
+      end: "top 40%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
+
+page8Animation();
+
+function page9Animation() {
+  const footerElem1 = document.querySelector(".footer-elem1");
+
+  clutterAnimation(".footer-elem1>h3");
+  clutterAnimation(".footer-elem1>a");
+  footerElem1.addEventListener("mouseenter", () => {
+    gsap.to(".footer-elem1>a", {
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.6,
+    });
+
+    gsap.to(".footer-elem1>h3>span", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      onComplete: () => {
+        const tl = gsap.timeline();
+        tl.to(".footer-elem1>h3>span", {
+          y: 0,
+          opacity: 0,
+          duration: 0.1,
+        });
+        tl.to(".footer-elem1>h3>span", {
+          opacity: 1,
+          duration: 0.3,
+        });
+        tl.to(".footer-elem1>a", {
+          duration: 0.3,
+          opacity: 0,
+        });
+      },
+    });
+  });
+
+  const footerElem2 = document.querySelector(".footer-elem2");
+
+  clutterAnimation(".footer-elem2>h3");
+  clutterAnimation(".footer-elem2>a");
+  footerElem2.addEventListener("mouseenter", () => {
+    gsap.to(".footer-elem2>a", {
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.6,
+    });
+
+    gsap.to(".footer-elem2>h3>span", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      onComplete: () => {
+        const tl = gsap.timeline();
+        tl.to(".footer-elem2>h3>span", {
+          y: 0,
+          opacity: 0,
+          duration: 0.1,
+        });
+        tl.to(".footer-elem2>h3>span", {
+          opacity: 1,
+          duration: 0.3,
+        });
+        tl.to(".footer-elem2>a", {
+          duration: 0.3,
+          opacity: 0,
+        });
+      },
+    });
+  });
+
+  const footerElem3 = document.querySelector(".footer-elem3");
+
+  clutterAnimation(".footer-elem3>h3");
+  clutterAnimation(".footer-elem3>a");
+  footerElem3.addEventListener("mouseenter", () => {
+    gsap.to(".footer-elem3>a", {
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.6,
+    });
+
+    gsap.to(".footer-elem3>h3>span", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      onComplete: () => {
+        const tl = gsap.timeline();
+        tl.to(".footer-elem3>h3>span", {
+          y: 0,
+          opacity: 0,
+          duration: 0.1,
+        });
+        tl.to(".footer-elem3>h3>span", {
+          opacity: 1,
+          duration: 0.3,
+        });
+        tl.to(".footer-elem3>a", {
+          duration: 0.3,
+          opacity: 0,
+        });
+      },
+    });
+  });
+
+  const footerElem4 = document.querySelector(".footer-elem4");
+
+  clutterAnimation(".footer-elem4>h3");
+  clutterAnimation(".footer-elem4>a");
+  footerElem4.addEventListener("mouseenter", () => {
+    gsap.to(".footer-elem4>a", {
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.6,
+    });
+
+    gsap.to(".footer-elem4>h3>span", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      onComplete: () => {
+        const tl = gsap.timeline();
+        tl.to(".footer-elem4>h3>span", {
+          y: 0,
+          opacity: 0,
+          duration: 0.1,
+        });
+        tl.to(".footer-elem4>h3>span", {
+          opacity: 1,
+          duration: 0.3,
+        });
+        tl.to(".footer-elem4>a", {
+          duration: 0.3,
+          opacity: 0,
+        });
+      },
+    });
+  });
+
+  const footerElem5 = document.querySelector(".footer-elem5");
+
+  clutterAnimation(".footer-elem5>h3");
+  clutterAnimation(".footer-elem5>a");
+  footerElem5.addEventListener("mouseenter", () => {
+    gsap.to(".footer-elem5>a", {
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.6,
+    });
+
+    gsap.to(".footer-elem5>h3>span", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      onComplete: () => {
+        const tl = gsap.timeline();
+        tl.to(".footer-elem5>h3>span", {
+          y: 0,
+          opacity: 0,
+          duration: 0.1,
+        });
+        tl.to(".footer-elem5>h3>span", {
+          opacity: 1,
+          duration: 0.3,
+        });
+        tl.to(".footer-elem5>a", {
+          duration: 0.3,
+          opacity: 0,
+        });
+      },
+    });
+  });
+
+  const footerElem6 = document.querySelector(".footer-elem6");
+
+  clutterAnimation(".footer-elem6>h3");
+  clutterAnimation(".footer-elem6>a");
+  footerElem6.addEventListener("mouseenter", () => {
+    gsap.to(".footer-elem6>a", {
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.6,
+    });
+
+    gsap.to(".footer-elem6>h3>span", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      onComplete: () => {
+        const tl = gsap.timeline();
+        tl.to(".footer-elem6>h3>span", {
+          y: 0,
+          opacity: 0,
+          duration: 0.1,
+        });
+        tl.to(".footer-elem6>h3>span", {
+          opacity: 1,
+          duration: 0.3,
+        });
+        tl.to(".footer-elem6>a", {
+          duration: 0.3,
+          opacity: 0,
+        });
+      },
+    });
+  });
+
+  const footerElem7 = document.querySelector(".footer-elem7");
+
+  clutterAnimation(".footer-elem7>h3");
+  clutterAnimation(".footer-elem7>a");
+  footerElem7.addEventListener("mouseenter", () => {
+    gsap.to(".footer-elem7>a", {
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.6,
+    });
+
+    gsap.to(".footer-elem7>h3>span", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: {
+        amount: 0.5,
+        from: "random",
+      },
+      onComplete: () => {
+        const tl = gsap.timeline();
+        tl.to(".footer-elem7>h3>span", {
+          y: 0,
+          opacity: 0,
+          duration: 0.1,
+        });
+        tl.to(".footer-elem7>h3>span", {
+          opacity: 1,
+          duration: 0.3,
+        });
+        tl.to(".footer-elem7>a", {
+          duration: 0.3,
+          opacity: 0,
+        });
+      },
+    });
+  });
+}
+
+page9Animation();
