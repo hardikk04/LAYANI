@@ -251,9 +251,8 @@ html {
 
 .berlin-svg {
   position: absolute;
-  top: -80%;
+  top: -65%;
   left: 0%;
-  transform: translate(0%, 0%);
   opacity: 0;
   scale: 0;
   height: 6.5vw;
