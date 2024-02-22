@@ -501,6 +501,8 @@ html {
   font-size: 32vw;
   font-weight: 100;
   line-height: 0.6;
+  /* -webkit-text-stroke: 1px #ebe4df; */
+  mix-blend-mode: difference;
 }
 
 .page2-title > h1 > span {
@@ -812,7 +814,40 @@ html {
   height: 40vw;
   width: 40vw;
   border-radius: 50%;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
+  border: 1px solid rgba(255, 255, 255, 0.319);
+  overflow: hidden;
+}
+
+.page5-circle > .video1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 50%;
+}
+
+.page5-circle > .video2 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0%;
+}
+
+.page5-circle > .video3 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0%;
+}
+.page5-circle > .video4 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0%;
 }
 
 /* ###################### */
@@ -1118,7 +1153,7 @@ html {
 
 .page6 {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   color: var(--secondary-color);
   padding: 0 4vw;
@@ -1160,11 +1195,78 @@ html {
   flex-wrap: wrap;
   gap: 3vw;
   margin-top: 5vw;
+  /* background-color: salmon; */
 }
 
-.brand-elem > svg {
-  height: 2vw;
+.strip1 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.strip1-scroller {
+  position: relative;
+  display: flex;
+  gap: 6vw;
+}
+
+.strip1-scroller > svg {
+  height: 3vw;
   width: 8vw;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.strip2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.strip2-scroller {
+  position: relative;
+  display: flex;
+  gap: 6vw;
+}
+
+.strip2-scroller > svg {
+  height: 3vw;
+  width: 8vw;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.strip3 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.strip3-scroller {
+  position: relative;
+  display: flex;
+  gap: 6vw;
+}
+
+.strip3-scroller > svg {
+  height: 3vw;
+  width: 8vw;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.strip4 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.strip4-scroller {
+  position: relative;
+  display: flex;
+  gap: 6vw;
+}
+
+.strip4-scroller > svg {
+  height: 3vw;
+  width: 8vw;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .page7 {

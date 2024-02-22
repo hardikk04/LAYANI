@@ -61,9 +61,13 @@ function loaderAnimation() {
 
   loaderTl.from(".page1-text-all", {
     opacity: 0,
-    y: -200,
-    x: 200,
-    stagger: 0.1,
+    scale: 6,
+    y: 0,
+    x: 0,
+    stagger: {
+      amount: 5,
+      from: "random",
+    },
   });
 
   // loaderTl.from(".page1-footer-box>span", {
@@ -555,6 +559,14 @@ function page2Animation() {
     "same"
   );
 
+  // page2PartsTl.to(
+  //   ".page2-title > h1 ",
+  //   {
+  //     color: "transparent",
+  //   },
+  //   "same"
+  // );
+
   page2PartsTl.to(
     ".page2",
     {
@@ -931,6 +943,11 @@ gsap.from(".page3-elem", {
   },
 });
 
+Shery.makeMagnet(".page3-elem" /* Element to target.*/, {
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
 page3MouseFollowerAnimation();
 
 const mousefollowerImgArray = ["./Imgs/coco-cola.png", ""];
@@ -1020,7 +1037,15 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part1",
     {
-      top: "-15%",
+      top: "-30%",
+    },
+    "p5-p1"
+  );
+
+  page5AnimationTl.to(
+    ".page5-circle > .video1",
+    {
+      top: "-100%",
     },
     "p5-p1"
   );
@@ -1028,7 +1053,15 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part2",
     {
-      top: "-30%",
+      top: "-50%",
+    },
+    "p5-p2"
+  );
+
+  page5AnimationTl.to(
+    ".page5-circle > .video2",
+    {
+      top: "-210%",
     },
     "p5-p2"
   );
@@ -1036,7 +1069,15 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part3",
     {
-      top: "-45%",
+      top: "-65%",
+    },
+    "p5-p3"
+  );
+
+  page5AnimationTl.to(
+    ".page5-circle > .video3",
+    {
+      top: "-310%",
     },
     "p5-p3"
   );
@@ -1044,7 +1085,14 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part4",
     {
-      top: "-60%",
+      top: "-80%",
+    },
+    "p5-p4"
+  );
+  page5AnimationTl.to(
+    ".page5-circle > .video4",
+    {
+      top: "-510%",
     },
     "p5-p4"
   );
@@ -1052,7 +1100,7 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part5",
     {
-      top: "-60%",
+      top: "-80%",
     },
     "p5-p5"
   );
@@ -1060,7 +1108,7 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part6",
     {
-      top: "-80%",
+      top: "-100%",
     },
     "p5-p6"
   );
@@ -1068,7 +1116,7 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part7",
     {
-      top: "-90%",
+      top: "-110%",
     },
     "p5-p7"
   );
@@ -1076,7 +1124,7 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part8",
     {
-      top: "-110%",
+      top: "-130%",
     },
     "p5-p8"
   );
@@ -1084,7 +1132,7 @@ function page5Animation() {
   page5AnimationTl.to(
     ".page5-left-part9",
     {
-      top: "-120%",
+      top: "-140%",
     },
     "p5-p9"
   );
@@ -1171,6 +1219,54 @@ function page6Animation() {
       trigger: ".page6-title-box",
       start: "top 30%",
       end: "top 0%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  gsap.from(".strip1-scroller", {
+    transform: "translateX(-100%)",
+    scrollTrigger: {
+      body: "body",
+      trigger: ".strip1-scroller",
+      start: "top 100%",
+      end: "top 0",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  gsap.to(".strip2-scroller", {
+    transform: "translateX(-100%)",
+    scrollTrigger: {
+      body: "body",
+      trigger: ".strip2-scroller",
+      start: "top 100%",
+      end: "top 0",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  gsap.from(".strip3-scroller", {
+    transform: "translateX(-100%)",
+    scrollTrigger: {
+      body: "body",
+      trigger: ".strip3-scroller",
+      start: "top 100%",
+      end: "top 0",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  gsap.to(".strip4-scroller", {
+    transform: "translateX(-100%)",
+    scrollTrigger: {
+      body: "body",
+      trigger: ".strip4-scroller",
+      start: "top 100%",
+      end: "top 0",
       scrub: 1,
       // markers: true,
     },
