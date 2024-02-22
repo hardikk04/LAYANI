@@ -225,10 +225,11 @@ html {
 
 .philippe-svg {
   position: absolute;
-  top: -50%;
+  top: -20%;
   /* left: 50%; */
-  transform: translate(15%, 20%);
+  transform: translate(15%, 0%);
   /* opacity: 0; */
+  height: 5.5vw;
 }
 
 .philippe-path {
@@ -255,6 +256,7 @@ html {
   transform: translate(0%, 0%);
   opacity: 0;
   scale: 0;
+  height: 6.5vw;
 }
 
 .vienna {
@@ -271,10 +273,11 @@ html {
 
 .vienna-svg {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -100%);
   opacity: 0;
+  height: 6.5vw;
 }
 
 .ux {
@@ -296,6 +299,7 @@ html {
   transform: translate(-10%, -15%);
   opacity: 0;
   scale: 0;
+  height: 3.5vw;
 }
 
 .creativity {
@@ -317,6 +321,7 @@ html {
   /* transform: translate(-10%, 0%); */
   opacity: 0;
   scale: 0;
+  height: 3.5vw;
 }
 
 .tailor {
@@ -333,10 +338,10 @@ html {
 
 .tailor-svg {
   position: absolute;
-  top: 0%;
+  top: 15%;
   left: 0%;
-  transform: translate(0%, -30%);
   opacity: 0;
+  height: 3vw;
 }
 
 .experiences {
@@ -354,11 +359,10 @@ html {
 .experiences-svg {
   position: absolute;
   top: 10%;
-  left: -10%;
+  left: 0%;
   opacity: 0;
   scale: 0;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  height: 3vw;
 }
 
 .brand {
@@ -375,10 +379,11 @@ html {
 
 .brand-svg {
   position: absolute;
-  top: 0%;
+  top: 10%;
   left: 0%;
   opacity: 0;
   scale: 0;
+  height: 4vw;
 }
 
 .page1-footer {
