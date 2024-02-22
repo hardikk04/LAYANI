@@ -757,14 +757,16 @@ html {
 }
 
 .page5-box {
-  height: 100vh;
+  min-height: 120vh;
+  /* background-color: salmon; */
+  margin-top: 6vw;
   width: 100%;
   padding: 0 4vw;
   display: flex;
   justify-content: space-between;
   position: relative;
   transform-origin: top center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .page5-left {
@@ -777,12 +779,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 80%;
+  /* top: 80%; */
 }
 
 .page5-left-part1 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part1-title {
@@ -793,7 +797,7 @@ html {
 
 .page5-left-part1-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -807,51 +811,22 @@ html {
 
 .page5-right {
   width: 45%;
-  height: 100%;
-  position: relative;
+  /* height: 100%; */
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .page5-circle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: sticky;
+  top: 0;
   height: 40vw;
   width: 40vw;
   border-radius: 50%;
-  /* background-color: greenyellow; */
   border: 1px solid rgba(255, 255, 255, 0.319);
-  overflow: hidden;
-}
-
-.page5-circle > .video1 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  top: 50%;
-}
-
-.page5-circle > .video2 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  top: 0%;
-}
-
-.page5-circle > .video3 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  top: 0%;
-}
-.page5-circle > .video4 {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  top: 0%;
+  /* overflow: hidden; */
 }
 
 /* ###################### */
@@ -859,12 +834,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part2 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part2-title {
@@ -875,7 +852,7 @@ html {
 
 .page5-left-part2-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -892,12 +869,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part3 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part3-title {
@@ -908,7 +887,7 @@ html {
 
 .page5-left-part3-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -925,12 +904,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part4 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part4-title {
@@ -941,7 +922,7 @@ html {
 
 .page5-left-part4-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -959,12 +940,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part5 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part5-title {
@@ -975,7 +958,7 @@ html {
 
 .page5-left-part5-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -993,23 +976,25 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part6 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part6-title {
   overflow: hidden;
   /* background-color: salmon; */
-  height: 10vw;
+  height: 6vw;
 }
 
 .page5-left-part6-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -1027,12 +1012,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part7 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part7-title {
@@ -1043,7 +1030,7 @@ html {
 
 .page5-left-part7-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -1060,12 +1047,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part8 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  cursor: pointer;
+  height: 1.5vw;
 }
 
 .page5-left-part8-title {
@@ -1076,7 +1065,7 @@ html {
 
 .page5-left-part8-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -1094,12 +1083,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part9 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  cursor: pointer;
+  height: 1.5vw;
 }
 
 .page5-left-part9-title {
@@ -1110,7 +1101,7 @@ html {
 
 .page5-left-part9-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 
@@ -1127,12 +1118,14 @@ html {
   display: flex;
   gap: 2vw;
   position: relative;
-  top: 100%;
+  /* top: 100%; */
 }
 
 .page5-left-part10 > svg {
   flex-shrink: 0;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
+  height: 1.5vw;
+  cursor: pointer;
 }
 
 .page5-left-part10-title {
@@ -1143,7 +1136,7 @@ html {
 
 .page5-left-part10-title > h1 {
   font-family: apercuLight;
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 500; */
 }
 

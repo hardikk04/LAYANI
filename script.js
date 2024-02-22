@@ -1023,127 +1023,127 @@ function page5Animation() {
     },
   });
 
-  const page5AnimationTl = gsap.timeline({
-    scrollTrigger: {
-      scroller: "body",
-      trigger: ".page5-box",
-      start: "top 0",
-      end: "top -1200%",
-      scrub: 1,
-      pin: true,
-    },
-  });
+  // const page5AnimationTl = gsap.timeline({
+  //   scrollTrigger: {
+  //     scroller: "body",
+  //     trigger: ".page5-box",
+  //     start: "top 0",
+  //     end: "top -1200%",
+  //     scrub: 1,
+  //     pin: true,
+  //   },
+  // });
 
-  page5AnimationTl.to(
-    ".page5-left-part1",
-    {
-      top: "-30%",
-    },
-    "p5-p1"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part1",
+  //   {
+  //     top: "-30%",
+  //   },
+  //   "p5-p1"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-circle > .video1",
-    {
-      top: "-100%",
-    },
-    "p5-p1"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-circle > .video1",
+  //   {
+  //     top: "-100%",
+  //   },
+  //   "p5-p1"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part2",
-    {
-      top: "-50%",
-    },
-    "p5-p2"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part2",
+  //   {
+  //     top: "-50%",
+  //   },
+  //   "p5-p2"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-circle > .video2",
-    {
-      top: "-210%",
-    },
-    "p5-p2"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-circle > .video2",
+  //   {
+  //     top: "-210%",
+  //   },
+  //   "p5-p2"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part3",
-    {
-      top: "-65%",
-    },
-    "p5-p3"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part3",
+  //   {
+  //     top: "-65%",
+  //   },
+  //   "p5-p3"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-circle > .video3",
-    {
-      top: "-310%",
-    },
-    "p5-p3"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-circle > .video3",
+  //   {
+  //     top: "-310%",
+  //   },
+  //   "p5-p3"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part4",
-    {
-      top: "-80%",
-    },
-    "p5-p4"
-  );
-  page5AnimationTl.to(
-    ".page5-circle > .video4",
-    {
-      top: "-510%",
-    },
-    "p5-p4"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part4",
+  //   {
+  //     top: "-80%",
+  //   },
+  //   "p5-p4"
+  // );
+  // page5AnimationTl.to(
+  //   ".page5-circle > .video4",
+  //   {
+  //     top: "-510%",
+  //   },
+  //   "p5-p4"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part5",
-    {
-      top: "-80%",
-    },
-    "p5-p5"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part5",
+  //   {
+  //     top: "-80%",
+  //   },
+  //   "p5-p5"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part6",
-    {
-      top: "-100%",
-    },
-    "p5-p6"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part6",
+  //   {
+  //     top: "-100%",
+  //   },
+  //   "p5-p6"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part7",
-    {
-      top: "-110%",
-    },
-    "p5-p7"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part7",
+  //   {
+  //     top: "-110%",
+  //   },
+  //   "p5-p7"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part8",
-    {
-      top: "-130%",
-    },
-    "p5-p8"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part8",
+  //   {
+  //     top: "-130%",
+  //   },
+  //   "p5-p8"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part9",
-    {
-      top: "-140%",
-    },
-    "p5-p9"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part9",
+  //   {
+  //     top: "-140%",
+  //   },
+  //   "p5-p9"
+  // );
 
-  page5AnimationTl.to(
-    ".page5-left-part10",
-    {
-      top: "-70%",
-    },
-    "p5-p10"
-  );
+  // page5AnimationTl.to(
+  //   ".page5-left-part10",
+  //   {
+  //     top: "-70%",
+  //   },
+  //   "p5-p10"
+  // );
 }
 
 page5Animation();
@@ -1160,12 +1160,25 @@ page5AllSvg.forEach((svg, index) => {
       });
       for (let i = 0; i < page5AllTitles.length; i++) {
         if (i === index) {
-          gsap.to(page5AllTitles[i], {
-            height: "35vw",
-          });
+          if (index === 3 || index === 7) {
+            gsap.to(page5AllTitles[i], {
+              height: "34vw",
+            });
+          } else if (index === 5) {
+            gsap.to(page5AllTitles[i], {
+              height: "28vw",
+            });
+          } else {
+            gsap.to(page5AllTitles[i], {
+              height: "22vw",
+            });
+          }
         } else {
           gsap.to(page5AllTitles[i], {
             height: "6vw",
+          });
+          gsap.to(page5AllSvg[i], {
+            rotate: "0deg",
           });
         }
       }
@@ -1179,9 +1192,6 @@ page5AllSvg.forEach((svg, index) => {
         height: "6vw",
       });
 
-      gsap.to(page5AllTitles[5], {
-        height: "10vw",
-      });
       flag = 0;
     }
   });
@@ -1225,7 +1235,7 @@ function page6Animation() {
   });
 
   gsap.from(".strip1-scroller", {
-    transform: "translateX(-100%)",
+    transform: "translateX(-40%)",
     scrollTrigger: {
       body: "body",
       trigger: ".strip1-scroller",
@@ -1237,7 +1247,7 @@ function page6Animation() {
   });
 
   gsap.to(".strip2-scroller", {
-    transform: "translateX(-100%)",
+    transform: "translateX(-40%)",
     scrollTrigger: {
       body: "body",
       trigger: ".strip2-scroller",
@@ -1249,7 +1259,7 @@ function page6Animation() {
   });
 
   gsap.from(".strip3-scroller", {
-    transform: "translateX(-100%)",
+    transform: "translateX(-40%)",
     scrollTrigger: {
       body: "body",
       trigger: ".strip3-scroller",
@@ -1261,7 +1271,7 @@ function page6Animation() {
   });
 
   gsap.to(".strip4-scroller", {
-    transform: "translateX(-100%)",
+    transform: "translateX(-40%)",
     scrollTrigger: {
       body: "body",
       trigger: ".strip4-scroller",
